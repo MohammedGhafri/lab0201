@@ -21,6 +21,17 @@
             opacity: 0.5;
         }
 
+        /* header h1:last-child{
+            color: blue;
+        } */
+        h1:last-child {
+            color: red;
+            font-size: 10px;
+            background-color: green;
+
+        }
+
+
         .one {
             color: #f5f5f5;
             font: small-caps bold 25px sans-serif;
@@ -35,7 +46,7 @@
             color: brown;
             font: small-caps bold 25px sans-serif;
             width: 450px;
-            bottom: 450px;
+            bottom: 400px;
             left: 1000px;
             background-color: blue;
             opacity: 0.3;
@@ -79,11 +90,11 @@
             margin-block-end: 25px;
 
         }
-        
+
 
         footer {
-            position: absolute;
-            left: 750px;
+            position: relative;
+            /* left: 50%; */
             color: blue;
             text-align: center;
             bottom: 10px;
@@ -94,9 +105,10 @@
 <body>
     <header>
         <h1>Ramadan's Daily</h1>
+        <h1>this is for class01</h1>
     </header>
     <main>
-        <p class="one">Ramadan is : the ninth month of the Islamic calendar.During the month of Ramadan, Muslims won't
+        <p class="one" style="color: #f5f5f5;">Ramadan is : the ninth month of the Islamic calendar.During the month of Ramadan, Muslims won't
             eat or drink
             between dawn and sunset. This is called fastingDuring the month of Ramadan, Muslims won't eat or drink
             between dawn and sunset. This is called fasting</p>
@@ -108,19 +120,37 @@
             <li class="n4"> Are you in tea or coffee club ?</li>
             <li class="n5">What is your cooking today ?</li>
         </ul>
-        <p class="two">Ramadan is also a time for spiritual reflection, prayer, doing good deeds and spending time with
+        <p class="two" style="color: brown;">Ramadan is also a time for spiritual reflection, prayer, doing good deeds and spending time with
             family and
             friends.</p>
-        
+        <div>
+            <h3 style="color: #E8342E; background-color: #f3f3f3; text-align: center;">Information about last ten days in ramadan</h3>
+            <p style="color: greenyellow;background-color: grey;">The Prophet said: "Whoever prays during the night of Qadr with faith and hoping for its reward will have
+                all of his previous sins forgiven.</p>
+            <p style="font-size: 25px; color: gold; background-color: white;">Aisha, may Allah be pleased with her, related that the Prophet said: Look for Laylatul Qadr on an
+                odd-numbered night during the last ten nights of Ramadan</p>
+
+        </div>
+
     </main>
     <footer>&#169; Mohammad Ghafri</footer>
     <script>
         var name = prompt('Enter Your name Plz :');
+        alert(`${name} that's pretty`);
+        console.log(`Your name is ${name}`);
         var status = prompt('Are You Thirsty ?');
+        console.log(`Thirsty: ${status}`);
+        alert(`at any case, Ramadan is almost finshed and that too bad... keep giong`);
         var food = prompt('Which food you prefer ?');
+        console.log(`your favourit food is : ${food}`);
+        alert(`nice ${food}`);
         var club = prompt('Are you in tea or coffee club ?');
+        console.log(`you love : ${club}`);
+        alert(`realy!`);
         var cooking = prompt('What is your cooking today ?');
-        alert('Your name is: ' + name + ' ,Your status is :' + status + ', You prefer :' + food + ', Your are in :' + club + 'And your cooking today is :' + cooking + 'Takabl Allah');
+        alert(`${cooking} is delecious`);
+        console.log(`your cooking today is ${cooking}`);
+        alert('Your name is: ' + name + ' ,Your status about if thirst is :' + status + ', You prefer :' + food + ', Your are in :' + club + ' And your cooking today is :' + cooking + ' Takabl Allah ');
     </script>
 </body>
 
